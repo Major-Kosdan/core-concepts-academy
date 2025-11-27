@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ | Core Concepts Academy</title>
+  <meta name="description" content="Frequently Asked Questions — Core Concepts Academy. Admissions, payments, courses, schedules and support." />
+
+  <!-- Fonts (Google) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/faq.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+   <!-- Header (shared) -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Core Concepts Academy">
+        <img src="assets/images/logo.jpg" alt="Core Concepts Academy logo" class="brand-logo" />
+        <span class="brand-name">Core Concepts Academy</span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="courses.html" class="nav-link">Courses</a></li>
+          <li><a href="register.html" class="nav-link cta">Register</a></li>
+          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+      </button>
+    </div>
+  </header>
+  <main class="faq-page">
+    <!-- Hero -->
+    <section class="faq-hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Frequently Asked Questions</h1>
+          <p class="hero-sub">Everything you need to know about registration, courses, payments and how we teach — answers clearly organised for you.</p>
+
+          <!-- Search -->
+          <div class="faq-search">
+            <label for="faq-search" class="sr-only">Search FAQs</label>
+            <input id="faq-search" type="search" placeholder="Search questions (e.g., payment, registration, schedule)..." aria-label="Search frequently asked questions">
+            <button id="clear-search" class="clear-btn" aria-label="Clear search" title="Clear">✕</button>
+          </div>
+
+          <p class="small-muted">Tip: try keywords like <strong>Paystack</strong>, <strong>100L</strong>, or <strong>recorded</strong>.</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+           <img src="assets/images/FAQ-vector-design-concept.jpg" alt="Decorative illustration" class="illustration">
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ content -->
+    <section class="faq-section container">
+      <div class="faq-grid">
+
+        <!-- Accordion column -->
+        <div class="faq-column">
+          <div class="accordion" id="faq-accordion" data-allow-multiple="false">
+            <!-- FAQ item template:
+              Each item has:
+                - button.accordion-toggle (role=button, aria-expanded)
+                - div.accordion-panel (aria-hidden)
+            -->
+            <!-- 1 -->
+            <div class="faq-item">
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="panel-1" id="q-1">
+                <span class="q">How do I register for a course?</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div id="panel-1" class="accordion-panel" role="region" aria-labelledby="q-1" hidden>
+                <p>To register, go to the <a href="register.html">Register</a> page, fill your details, select your course(s), and click Proceed to Payment. After payment, you’ll receive a confirmation and access details.</p>
+              </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="faq-item">
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="panel-2" id="q-2">
+                <span class="q">Which payment methods do you accept?</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div id="panel-2" class="accordion-panel" role="region" aria-labelledby="q-2" hidden>
+                <p>We use Paystack for card and bank payments (NGN). Paystack supports cards, USSD, bank transfers and mobile wallets depending on your bank. Use the test keys during development.</p>
+              </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="faq-item">
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="panel-3" id="q-3">
+                <span class="q">Can I select multiple courses?</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div id="panel-3" class="accordion-panel" role="region" aria-labelledby="q-3" hidden>
+                <p>Yes — the registration form allows selecting multiple courses (e.g., Physics and Maths). The payment amount updates automatically according to selected courses.</p>
+              </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="faq-item">
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="panel-4" id="q-4">
+                <span class="q">Do you offer recorded sessions for revision?</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div id="panel-4" class="accordion-panel" role="region" aria-labelledby="q-4" hidden>
+                <p>Yes — most sessions are recorded and available to enrolled students to review anytime via the student portal or provided links.</p>
+              </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="faq-item">
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="panel-5" id="q-5">
+                <span class="q">What is your refund policy?</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div id="panel-5" class="accordion-panel" role="region" aria-labelledby="q-5" hidden>
+                <p>We issue refunds only within 48 hours of payment and before the course materials are accessed. Contact support with your transaction reference for any request.</p>
+              </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="faq-item">
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="panel-6" id="q-6">
+                <span class="q">How long are the courses?</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div id="panel-6" class="accordion-panel" role="region" aria-labelledby="q-6" hidden>
+                <p>Standard course durations are 3–4 months depending on the subject. Each course page shows exact length and weekly schedule.</p>
+              </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="faq-item">
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="panel-7" id="q-7">
+                <span class="q">Do you provide certificates?</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div id="panel-7" class="accordion-panel" role="region" aria-labelledby="q-7" hidden>
+                <p>Yes — learners who complete a course and pass the final assessment receive a digital certificate of completion.</p>
+              </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="faq-item">
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="panel-8" id="q-8">
+                <span class="q">Can I switch course after registering?</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div id="panel-8" class="accordion-panel" role="region" aria-labelledby="q-8" hidden>
+                <p>Switch requests are considered case-by-case. Contact support with reasons and we’ll guide you on next steps.</p>
+              </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="faq-item">
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="panel-9" id="q-9">
+                <span class="q">Are there group discounts?</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div id="panel-9" class="accordion-panel" role="region" aria-labelledby="q-9" hidden>
+                <p>Yes — for cohorts and group registrations there are discounts. Email our team for a group quote.</p>
+              </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="faq-item">
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="panel-10" id="q-10">
+                <span class="q">How do I contact support?</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div id="panel-10" class="accordion-panel" role="region" aria-labelledby="q-10" hidden>
+                <p>Reach us via <a href="mailto:hello@coreconceptsacademy.com">hello@coreconceptsacademy.com</a>, WhatsApp or Telegram links on the Contact page, or use the chat widget.</p>
+              </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="faq-item">
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="panel-11" id="q-11">
+                <span class="q">Do you help with exam techniques?</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div id="panel-11" class="accordion-panel" role="region" aria-labelledby="q-11" hidden>
+                <p>Absolutely — our lessons include exam techniques, time-saving approaches, and common pitfalls to avoid in answers.</p>
+              </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="faq-item">
+              <button class="accordion-toggle" aria-expanded="false" aria-controls="panel-12" id="q-12">
+                <span class="q">Can I get 1-on-1 tutoring?</span>
+                <span class="chev" aria-hidden="true">▾</span>
+              </button>
+              <div id="panel-12" class="accordion-panel" role="region" aria-labelledby="q-12" hidden>
+                <p>Yes — we offer 1-on-1 sessions for more personalized support. Book via the Register page or contact support for scheduling.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Support card column -->
+        <aside class="support-column" aria-label="Need more help?">
+          <div class="support-card">
+            <h3>Still need help?</h3>
+            <p>If your question isn't listed, our support team is ready to help you 24/7 during working hours.</p>
+            <a class="btn btn-primary" href="contact.html">Contact Support</a>
+            <a class="btn btn-outline" href="register.html">Register Now</a>
+
+            <hr>
+
+            <div class="support-meta">
+              <div>
+                <strong>Phone</strong>
+                <p><a href="https://wa.me/2348000000000">+234 800 000 0000</a></p>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:hello@coreconceptsacademy.com">hello@coreconceptsacademy.com</a></p>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (shared, creative) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.jpg" alt="CCA logo" class="footer-logo" />
+        <p class="muted">Core Concepts Academy — Clear teaching, measurable progress.</p>
+       <div class="socials">
+          <a href="https://t.me/+BsRczXPiluEwNjFk" aria-label="Telegram" class="social"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2L2 9l5 2 2 6 7-4 6 5z" fill="currentColor"/></svg></a>
+          <a href="https://wa.me/2349038488526" aria-label="WhatsApp" class="social"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" fill="currentColor"/></svg></a>
+          <a href="mailto:coreconceptsacademy2024@gmail.com" aria-label="Email" class="social"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </div>
+
+       <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:coreconceptsacademy2024@gmail.com">coreconceptsacademy2024@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/2349038488526">+234 903 848 8526</a></p>
+        <p>Telegram: <a href="https://t.me/+BsRczXPiluEwNjFk">@Core Concepts Academy</a></p>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Get updates</h4>
+        <form id="newsletter-form" class="newsletter-form" action="https://formspree.io/f/mrbwpqaa" method="POST">
+          <label for="newsletter-email" class="sr-only">Email address</label>
+          <input id="newsletter-email" type="email" name="email" placeholder="Your email" required>
+          <button class="btn btn-subscribe" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year"></span> Core Concepts Academy — All rights reserved.</p>
+        <nav class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/faq.js" defer></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

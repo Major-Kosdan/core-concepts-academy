@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Core Concepts Academy — Learn Smarter</title>
+  <meta name="description" content="Core Concepts Academy — Personalized online tutoring in Physics, Chemistry and Mathematics. Learn smarter, understand deeper." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Favicons (optional) -->
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Header (shared) -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Core Concepts Academy">
+        <img src="assets/images/logo.jpg" alt="Core Concepts Academy logo" class="brand-logo" />
+        <span class="brand-name">Core Concepts Academy</span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="courses.html" class="nav-link">Courses</a></li>
+          <li><a href="register.html" class="nav-link cta">Register</a></li>
+          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1 class="hero-title">Learn Smarter, Understand Deeper.</h1>
+          <p class="hero-sub">Personalized tutoring in <strong>Physics</strong>, <strong>Chemistry</strong> and <strong>Mathematics</strong> — created for university students who want clarity and confidence.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="register.html">Register & Pay</a>
+            <a class="btn btn-outline" href="courses.html">View Courses</a>
+          </div>
+
+          <ul class="hero-features">
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Experienced tutors</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Structured lessons</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Practical problem-solving</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <!-- placeholder visual - replace with hero image -->
+          <div class="card hero-card">
+            <img src="assets/images/hero-img.png" alt="Students studying online" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses preview -->
+    <section class="section container courses-preview">
+      <h2 class="section-title">Popular Courses</h2>
+      <p class="section-lead">Choose a focused subject or take the full bundle for better value.</p>
+
+      <div class="cards-grid">
+        <article class="course-card">
+          <div class="card-head">
+            <h3>Physics</h3>
+            <span class="price">₦5,000</span>
+          </div>
+          <p class="card-body">Mechanics, waves & thermodynamics — clear explanations + worked problems.</p>
+          <div class="card-footer">
+            <a href="register.html?course=Physics" class="btn btn-secondary">Join & Pay</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="card-head">
+            <h3>Chemistry</h3>
+            <span class="price">₦5,000</span>
+          </div>
+          <p class="card-body">Atomic structure, bonding, reactions & exam techniques.</p>
+          <div class="card-footer">
+            <a href="register.html?course=Chemistry" class="btn btn-secondary">Join & Pay</a>
+          </div>
+        </article>
+
+        <article class="course-card">
+          <div class="card-head">
+            <h3>Mathematics</h3>
+            <span class="price">₦5,000</span>
+          </div>
+          <p class="card-body">Sequences, calculus basics, algebra, problem-solving practice.</p>
+          <div class="card-footer">
+            <a href="register.html?course=Mathematics" class="btn btn-secondary">Join & Pay</a>
+          </div>
+        </article>
+
+        <article class="course-card featured">
+          <div class="card-head">
+            <h3>All Courses (Bundle)</h3>
+            <span class="price">₦12,000</span>
+          </div>
+          <p class="card-body">Full access to Physics, Chemistry & Mathematics at a discounted price.</p>
+          <div class="card-footer">
+            <a href="register.html?course=All%20Courses" class="btn btn-accent">Buy Bundle</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonial preview -->
+    <section class="section container testimonials-preview">
+  <h2 class="section-title">What Students Say</h2>
+
+  <div class="testimonial-slider">
+    <div class="testimonial-track">
+      <!-- Testimonial 1 -->
+      <div class="testimonial-card">
+        <img src="assets/images/students/kosi.jpg" alt="Ifeoma" class="student-photo" />
+        <p class="testimonial-text">“The explanations helped me finally understand circular motion — I improved my grades.”</p>
+        <h4 class="student-name">Ifeoma</h4>
+        <span class="student-course">300L Physics</span>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="testimonial-card">
+        <img src="assets/images/students/ceci.jpeg" alt="Chidi" class="student-photo" />
+        <p class="testimonial-text">“Clear steps and worked examples. The sessions are worth every naira.”</p>
+        <h4 class="student-name">Chidi</h4>
+        <span class="student-course">200L Chemistry</span>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="testimonial-card">
+        <img src="assets/images/students/dan.jpg" alt="Ada" class="student-photo" />
+        <p class="testimonial-text">“Core Concepts made topics I feared so simple to understand.”</p>
+        <h4 class="student-name">Ada</h4>
+        <span class="student-course">100L Computer Science</span>
+      </div>
+
+       <!-- Testimonial 4 -->
+      <div class="testimonial-card">
+        <img src="assets/images/students/koss.jpg" alt="Ifeoma" class="student-photo" />
+        <p class="testimonial-text">“The explanations helped me finally understand circular motion — I improved my grades.”</p>
+        <h4 class="student-name">Ifeoma</h4>
+        <span class="student-course">300L Physics</span>
+      </div>
+
+      <!-- Testimonial 5 -->
+      <div class="testimonial-card">
+        <img src="assets/images/students/dp.png" alt="Chidi" class="student-photo" />
+        <p class="testimonial-text">“Clear steps and worked examples. The sessions are worth every naira.”</p>
+        <h4 class="student-name">Chidi</h4>
+        <span class="student-course">200L Chemistry</span>
+      </div>
+
+      <!-- Testimonial 6 -->
+      <div class="testimonial-card">
+        <img src="assets/images/students/kos.jpg" alt="Ada" class="student-photo" />
+        <p class="testimonial-text">“Core Concepts made topics I feared so simple to understand.”</p>
+        <h4 class="student-name">Ada</h4>
+        <span class="student-course">100L Computer Science</span>
+      </div>
+    </div>
+  </div>
+</section>
+     <!-- CTA -->
+  <section class="final-cta section bg-gradient-strong">
+    <div class="container cta-inner">
+      <h2>Ready to start?</h2>
+      <p>Secure your place — limited seats per cohort.</p>
+      <div class="cta-buttons">
+        <a class="btn btn-accent" href="register.html">Register & Pay</a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- Footer (shared, creative) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo.jpg" alt="CCA logo" class="footer-logo" />
+        <p class="muted">Core Concepts Academy — Clear teaching, measurable progress.</p>
+       <div class="socials">
+          <a href="https://t.me/+BsRczXPiluEwNjFk" aria-label="Telegram" class="social"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2L2 9l5 2 2 6 7-4 6 5z" fill="currentColor"/></svg></a>
+          <a href="https://wa.me/2349038488526" aria-label="WhatsApp" class="social"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" fill="currentColor"/></svg></a>
+          <a href="mailto:coreconceptsacademy2024@gmail.com" aria-label="Email" class="social"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </div>
+
+         <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:coreconceptsacademy2024@gmail.com">coreconceptsacademy2024@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/2349038488526">+234 903 848 8526</a></p>
+        <p>Telegram: <a href="https://t.me/+BsRczXPiluEwNjFk">@Core Concepts Academy</a></p>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Get updates</h4>
+        <form id="newsletter-form" class="newsletter-form" action="https://formspree.io/f/mrbwpqaa" method="POST">
+          <label for="newsletter-email" class="sr-only">Email address</label>
+          <input id="newsletter-email" type="email" name="email" placeholder="Your email" required>
+          <button class="btn btn-subscribe" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year"></span> Core Concepts Academy — All rights reserved.</p>
+        <nav class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form.js"></script>
+</body>
+</html>
