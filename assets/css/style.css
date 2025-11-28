@@ -160,9 +160,6 @@ body{
   box-shadow: 0 6px 14px rgba(251,191,36,0.14);
 }
 
-.nav-list a.active {
-  font-weight: bold;
-}
 
 
 /* Hamburger (mobile) */
@@ -202,7 +199,7 @@ body{
 .btn-primary{ background:var(--color-primary); color:#fff; box-shadow: 0 10px 30px rgba(30,58,138,0.12); }
 .btn-primary:hover{ transform:translateY(-3px); background:var(--color-accent) }
 .btn-outline{ background:#fff !important; border:2px solid rgba(30,58,138,0.08) !important; color:var(--color-primary) !important; }
-.btn-secondary{ background: #fff; color:var(--color-primary); border: 1px solid rgba(30,58,138,0.06); }
+.btn-secondary{ background: var(--primary); color: #fff; border: 1px solid rgba(30,58,138,0.06); }
 .btn-accent{ background:var(--color-gold); color:#07203a; }
 .btn-subscribe{ background:var(--color-accent); color:white; padding:9px 14px; border-radius:8px; }
 
@@ -222,9 +219,10 @@ body{
 
 /* Cards grid */
 .cards-grid{ display:grid; grid-template-columns: repeat(4,1fr); gap:18px; margin-top:18px; }
-.course-card{ background:#fff; border-radius:12px; padding:18px; box-shadow: 0 10px 28px rgba(12,20,40,0.04); transition:transform var(--duration) var(--ease); display:flex; flex-direction:column; justify-content:space-between; }
+.course-card{background: rgba(255, 255, 255, 0.65) !important;
+backdrop-filter: blur(10px) ; border-radius:12px; padding:18px; box-shadow: 0 10px 28px rgba(12,20,40,0.04); transition:transform var(--duration) var(--ease); display:flex; flex-direction:column; justify-content:space-between; }
 .course-card:hover{ transform:translateY(-8px) }
-.course-card.featured{ border: 2px solid rgba(37,99,235,0.12); background: linear-gradient(135deg, #fff8e1, #ffe082) }
+.course-card.featured{ border: 2px solid rgba(37,99,235,0.12); background: linear-gradient(135deg, #fff8e1, #ffe082) !important }
 .card-head{ display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
 .card-head h3{ margin:0; font-size:1.05rem; color:var(--color-primary); }
 .price{ font-weight:700; color:var(--color-primary); }

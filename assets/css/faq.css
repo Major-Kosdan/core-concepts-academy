@@ -12,7 +12,13 @@
 .small-muted{color:var(--muted);font-size:0.9rem;margin-top:8px}
 
 /* illustration placeholder */
-.hero-visual .illustration{height:140px;width:220px;border-radius:12px;background:linear-gradient(135deg,var(--secondary),var(--primary));opacity:1;margin:0 auto}
+.hero-visual .illustration{height:140px;width:220px;border-radius:12px;background:linear-gradient(135deg,var(--secondary),var(--primary));opacity:1;margin-right: 45px}
+/* Mobile: remove right margin */
+@media (max-width: 768px) {
+  .hero-visual .illustration {
+    margin-right: 0;
+  }
+}
 
 /* ---------- MAIN GRID ---------- */
 .faq-section{padding:20px 0 60px}

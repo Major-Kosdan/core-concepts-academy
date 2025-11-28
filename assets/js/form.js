@@ -43,10 +43,10 @@ document.getElementById('payButton').addEventListener('click', function(e) {
       case 'physics':
       case 'chemistry':
       case 'mathematics':
-        amount += 35000 * 100;
+        amount += 30000 * 100;
         break;
       case 'all':
-        amount += 90000 * 100;
+        amount += 45000 * 100;
         break;
     }
   });
