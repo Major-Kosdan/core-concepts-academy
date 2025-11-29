@@ -534,6 +534,7 @@ backdrop-filter: blur(10px) ; border-radius:12px; padding:18px; box-shadow: 0 10
   font-size: 1rem;
   color: #444;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .courses-section {
