@@ -72,11 +72,17 @@ document.addEventListener("DOMContentLoaded", () => {
     let start = 0;
     const duration = 1400;
     const step = Math.max(1, Math.floor(target / (duration / 30)));
+
     function tick() {
       start += step;
-      if (start >= target) el.textContent = target;
-      else { el.textContent = start; requestAnimationFrame(tick); }
+      if (start >= target) {
+        el.textContent = target + (el.dataset.plus === 'true' ? '+' : '');
+      } else {
+        el.textContent = start;
+        requestAnimationFrame(tick);
+      }
     }
+
     tick();
   };
 
@@ -88,10 +94,11 @@ document.addEventListener("DOMContentLoaded", () => {
         o.unobserve(el);
       }
     });
-  }, {threshold: 0.35});
+  }, { threshold: 0.35 });
 
   counters.forEach(c => obs.observe(c));
 })();
+
 
 // Carousel Controls
 const carousel = document.querySelector('.carousel');
@@ -164,3 +171,5 @@ const studentName = urlParams.get('name'); // renamed variable
 if (studentName) {
   document.getElementById('student-name').textContent = `Thank You, ${studentName}!`;
 }
+
+
