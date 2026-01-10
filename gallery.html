@@ -1,0 +1,373 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Captured Concepts — Explore photos of students learning, thriving, and growing with Core Concepts Academy, from UTME prep to university classes." />
+  <meta name="keywords" content="Core Concepts Academy, tutoring, students, gallery, classes, learning, UTME, physics, chemistry, maths, Nigeria" />
+
+  <title>Gallery Hub | Core Concepts Academy</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <style>
+
+    :root{
+      --color-primary: #1E3A8A;
+      --color-accent:  #2563EB;
+      --color-gold:    #FBBF24;
+      --bg:            #F9FAFB;
+      --text:          #1F2937;
+      --muted:         #6B7280;
+      --footer-bg:     #0B1220;
+      --btn-radius:    10px;
+
+      --primary: #0A1D56;
+      --secondary: #3FA9F5;
+      --accent: #F8C02C;
+      --bg-light: #F5F7FA;
+      --text-dark: #333333;
+      --text-muted: #666666;
+      --form-bg: #ffffff;
+    }
+
+
+    /* ===== Premium Gallery Section ===== */
+
+    .gallery-section {
+      padding: 60px 0;
+      background: var(--bg-light);
+    }
+
+    .gallery-title {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .gallery-subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* GRID STRUCTURE */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+
+    /* CARD STYLING */
+    .gallery-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.35);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* CAPTION ALWAYS VISIBLE */
+    .gallery-caption {
+      padding: 14px;
+      background: rgba(255,255,255,0.55);
+      backdrop-filter: blur(14px);
+      border-top: 1px solid rgba(255,255,255,0.6);
+    }
+
+    .gallery-caption h4 {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .gallery-caption p {
+      margin-top: 4px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    /* ===== RESPONSIVE BREAKPOINTS ===== */
+
+    /* Tablet - 3 per row */
+    @media (max-width: 1024px) {
+      .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Mobile - 1 per row */
+    @media (max-width: 680px) {
+      .gallery-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .gallery-card img {
+        height: 220px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+
+    <!-- Header (shared) -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Core Concepts Academy">
+        <img src="assets/images/logo-removebg-preview (2).png" alt="Core Concepts Academy logo" class="brand-logo" />
+        <span class="brand-name">Core Concepts Academy</span>
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="courses.html" class="nav-link">Courses</a></li>
+          <li><a href="register.html" class="nav-link cta">Register</a></li>
+          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery Hub</a></li>
+        </ul>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="gallery-section">
+    <div class="container">
+      <h2 class="gallery-title">Teaching Moments — My Journey as an Undergraduate Tutor</h2>
+      <p class="gallery-subtitle">From UNN lectures to UTME prep sessions, leading a team of tutors and shaping confident learners while still an undergraduate.</p>
+
+      <div class="gallery-grid">
+
+        <!-- Card 1 -->
+        <div class="gallery-card">
+          <img src="assets/images/class1.jpg" alt="UNN tutoring session">
+          <div class="gallery-caption">
+            <h4>UNN 100L – CHEM 101 Night Tutorial</h4>
+            <p>Guiding 100L students from 10 PM to 4 AM, breaking down core concepts and preparing them for their exams.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="gallery-card">
+          <img src="assets/images/class2.jpg" alt="JAMB class session">
+          <div class="gallery-caption">
+            <h4>UNN 100L – CHEM 101 Revision</h4>
+            <p>Guiding students through key concepts and exam prep to build confidence and understanding.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="gallery-card">
+          <img src="assets/images/class3.jpg" alt="Private lesson">
+          <div class="gallery-caption">
+            <h4>UNN 100L - MATH 111 Tutorial</h4>
+            <p>Teaching and guiding first-year students to master core maths concepts and prepare for exams.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="gallery-card">
+          <img src="assets/images/class4.jpg" alt="Group study">
+          <div class="gallery-caption">
+            <h4>UNN 100L - PHY 111 Tutorial</h4>
+            <p>Helping first-year students understand core Physics concepts and excel in their exams.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="gallery-card">
+          <img src="assets/images/class5..jpg" alt="Teaching on a board">
+          <div class="gallery-caption">
+            <h4>Explaining Core Principles</h4>
+            <p>Guiding students through challenging topics step by step, helping them understand the “why” behind every concept.</p>
+          </div>
+        </div>
+
+        <!-- Add more cards if you want -->
+           <!-- Card 1 -->
+        <div class="gallery-card">
+          <img src="assets/images/class6..jpg" alt="UNN tutoring session">
+          <div class="gallery-caption">
+            <h4>Mastering Practical Physics</h4>
+            <p>Guiding students through hands-on experiments, and showing exactly how to answer practical questions with confidence and accuracy.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="gallery-card">
+          <img src="assets/images/class7.jpg" alt="JAMB class session">
+          <div class="gallery-caption">
+            <h4>Math 121 Night Revision</h4>
+            <p>Teaching a small group of first-year students late at night, focusing on calculus, integration, differentiation, and time-saving shortcuts to help them ace their exams the next day.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="gallery-card">
+          <img src="assets/images/class5.jpg" alt="Private lesson">
+          <div class="gallery-caption">
+            <h4>PHY 118 – Electromagnetism</h4>
+            <p>Guiding first-year students through the core principles of electromagnetism, simplifying complex concepts and demonstrating practical examples.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="gallery-card">
+          <img src="assets/images/class6.jpg" alt="Group study">
+          <div class="gallery-caption">
+            <h4>CHEM 122 – Organic Chemistry</h4>
+            <p>Helping first-year students master the fundamentals of organic chemistry, breaking down reactions and functional groups into simple,  for easy understanding.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="gallery-card">
+          <img src="assets/images/class8.jpg" alt="Teaching on a board">
+          <div class="gallery-caption">
+            <h4>Mastering Concepts with Confidence</h4>
+            <p>Explaining concepts clearly and thoroughly, helping students build a strong foundation in chemistry. We break down complex ideas into simple steps, provide practical examples.</p>
+          </div>
+        </div>
+  <!-- Card 1 -->
+        <div class="gallery-card">
+          <img src="assets/images/class9.jpg" alt="UNN tutoring session">
+          <div class="gallery-caption">
+            <h4>UTME Chemistry Prep — Daniel School of Extramural Studies, Nnewi</h4>
+            <p>Guiding aspiring JAMB candidates through essential chemistry concepts with clarity. We simplify complex topics, provide practical examples.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="gallery-card">
+          <img src="assets/images/class10.jpg" alt="JAMB class session">
+          <div class="gallery-caption">
+            <h4>UTME Physics Prep — Achievers Academy, Nsukka</h4>
+            <p>Helping JAMB candidates master Physics with clear explanations and step-by-step guidance. We break down difficult topics, focus on practical problem-solving.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="gallery-card">
+          <img src="assets/images/class11.jpg" alt="Private lesson">
+          <div class="gallery-caption">
+            <h4>Vacation Tutoring for Senior Secondary Students</h4>
+            <p>Helping senior secondary students strengthen key subjects during their long breaks. Build confidence, and prepare them for the next term.</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="gallery-card">
+          <img src="assets/images/CLASS12.jpg" alt="Group study">
+          <div class="gallery-caption">
+            <h4>SSCE Exam Preparation</h4>
+            <p>Guiding SSCE candidates to master Chemistry. Focused lessons, practice questions, and exam strategies help students build confidence and perform their best on exam day.</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="gallery-card">
+          <img src="assets/images/class13.jpg" alt="Teaching on a board">
+          <div class="gallery-caption">
+            <h4>UTME Exam Preparation</h4>
+            <p>Guiding students through core chemistry concepts, simplifying difficult topics, and providing practical examples. We focused on building confidence, problem-solving skills, and exam readiness so candidates could tackle questions with ease.</p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (shared, creative) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/logo-removebg-preview (2).png" alt="CCA logo" class="footer-logo" />
+        <p class="muted">Core Concepts Academy — Igniting minds, fueling futures.</p>
+        <div class="socials">
+          <a href="https://t.me/+BsRczXPiluEwNjFk" aria-label="Telegram" class="social"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2L2 9l5 2 2 6 7-4 6 5z" fill="currentColor"/></svg></a>
+          <a href="https://wa.me/2349038488526" aria-label="WhatsApp" class="social"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" fill="currentColor"/></svg></a>
+          <a href="mailto:coreconceptsacademy2024@gmail.com" aria-label="Email" class="social"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:coreconceptsacademy2024@gmail.com">coreconceptsacademy2024@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/2349038488526">+234 903 848 8526</a></p>
+        <p>Telegram: <a href="https://t.me/+BsRczXPiluEwNjFk">@Core Concepts Academy</a></p>
+      </div>
+
+      <div class="footer-newsletter">
+        <h4>Get updates</h4>
+        <form id="newsletter-form" class="newsletter-form" action="https://formspree.io/f/mrbwpqaa" method="POST">
+          <label for="newsletter-email" class="sr-only">Email address</label>
+          <input id="newsletter-email" type="email" name="email" placeholder="Your email" required>
+          <button class="btn btn-subscribe" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© <span id="year"></span> Core Concepts Academy — All rights reserved.</p>
+        <nav class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
