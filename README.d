@@ -11,7 +11,7 @@ The platform focuses on simplifying complex concepts and strengthening problem-s
 - Student-friendly interface designed for effective learning  
 
 ## Built With
-- **HTML**  
+- **HTML** 
 - **CSS**  
 - **JavaScript**
 
