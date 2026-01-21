@@ -20,7 +20,7 @@ The platform focuses on simplifying complex concepts and strengthening problem-s
 New features, improvements, and refinements are continuously being added.
 
 ## Goal
-To make quality science education more accessible by breaking down difficult concepts into clear, understandable lessons for students at different academic levels.
+To make quality science education more accessible by breaking down difficult concepts into clear, understandable lessons for students at different academic levels
 
 ---
 
